@@ -10,8 +10,9 @@ import SwiftUI
 @main
 struct BatteryMonApp: App {
     var body: some Scene {
-        WindowGroup {
+        MenuBarExtra("Battery Mon") {
             ContentView()
         }
+        .menuBarExtraStyle(.window)
     }
 }
