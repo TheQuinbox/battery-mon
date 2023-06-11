@@ -21,6 +21,7 @@ class BatteryWatcher {
             if level % self.configManager.interval == 0 && level != self.lastReported {
                 self.lastReported = level
                 let utterance = AVSpeechUtterance(string: "Battery \(level) percent")
+                utterance.prefersAssistiveTechnologySettings = true
                 self.synth.speak(utterance)
             }
         }
