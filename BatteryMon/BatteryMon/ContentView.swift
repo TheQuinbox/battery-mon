@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    @AppStorage("interval") var interval = 10
+    @StateObject private var viewModel: MainViewModel
+    
+    init() {
+        let configManager = ConfigManager()
+        _viewModel = StateObject(wrappedValue: MainViewModel(configManager: configManager))
+    }
     
     var body: some View {
         VStack {
@@ -21,7 +26,7 @@ struct ContentView: View {
             }
             .buttonStyle(.borderless)
             
-            Picker("Interval", selection: $interval) {
+            Picker("Interval", selection: $viewModel.selectedInterval) {
                 ForEach(1...100, id: \.self) { i in
                     Text("\(i)%")
                 }

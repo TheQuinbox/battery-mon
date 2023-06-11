@@ -11,6 +11,8 @@
 		34701FBE2A358C5400715C81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34701FBD2A358C5400715C81 /* ContentView.swift */; };
 		34701FC02A358C5400715C81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34701FBF2A358C5400715C81 /* Assets.xcassets */; };
 		34701FC32A358C5400715C81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34701FC22A358C5400715C81 /* Preview Assets.xcassets */; };
+		349857D32A3595FD0045BCAC /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349857D12A3595FD0045BCAC /* MainViewModel.swift */; };
+		349857D42A3595FD0045BCAC /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349857D22A3595FD0045BCAC /* ConfigManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		34701FBF2A358C5400715C81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34701FC22A358C5400715C81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		34701FC42A358C5400715C81 /* BatteryMon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BatteryMon.entitlements; sourceTree = "<group>"; };
+		349857D12A3595FD0045BCAC /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		349857D22A3595FD0045BCAC /* ConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			children = (
 				34002FEF2A358EF000148654 /* Info.plist */,
 				34701FBB2A358C5400715C81 /* BatteryMonApp.swift */,
+				349857D22A3595FD0045BCAC /* ConfigManager.swift */,
+				349857D12A3595FD0045BCAC /* MainViewModel.swift */,
 				34701FBD2A358C5400715C81 /* ContentView.swift */,
 				34701FBF2A358C5400715C81 /* Assets.xcassets */,
 				34701FC42A358C5400715C81 /* BatteryMon.entitlements */,
@@ -143,6 +149,8 @@
 			files = (
 				34701FBE2A358C5400715C81 /* ContentView.swift in Sources */,
 				34701FBC2A358C5400715C81 /* BatteryMonApp.swift in Sources */,
+				349857D32A3595FD0045BCAC /* MainViewModel.swift in Sources */,
+				349857D42A3595FD0045BCAC /* ConfigManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
