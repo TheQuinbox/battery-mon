@@ -17,7 +17,7 @@ class BatteryWatcher {
     func start() {
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
             let level = self.getBatteryLevel()
-            print("\(level) \(self.lastReported)")
+            
             if level % self.configManager.interval == 0 && level != self.lastReported {
                 self.lastReported = level
                 
