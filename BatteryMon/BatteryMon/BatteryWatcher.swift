@@ -5,11 +5,11 @@
 //  Created by Quin on 6/11/23.
 //
 
-import AppKit
+import AVFoundation
 import IOKit.ps
 
 class BatteryWatcher {
-    let synth = NSSpeechSynthesizer()
+    let synth = AVSpeechSynthesizer()
     var timer: Timer?
     let configManager = ConfigManager()
     var lastReported = 0
@@ -20,7 +20,8 @@ class BatteryWatcher {
             print("\(level) \(self.lastReported)")
             if level % self.configManager.interval == 0 && level != self.lastReported {
                 self.lastReported = level
-                self.synth.startSpeaking("Battery \(level)%")
+                let utterance = AVSpeechUtterance(string: "Battery \(level) percent")
+                self.synth.speak(utterance)
             }
         }
     }
