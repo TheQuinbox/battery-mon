@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34002FEF2A358EF000148654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		34701FB82A358C5400715C81 /* BatteryMon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryMon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34701FBB2A358C5400715C81 /* BatteryMonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryMonApp.swift; sourceTree = "<group>"; };
 		34701FBD2A358C5400715C81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		34701FBA2A358C5400715C81 /* BatteryMon */ = {
 			isa = PBXGroup;
 			children = (
+				34002FEF2A358EF000148654 /* Info.plist */,
 				34701FBB2A358C5400715C81 /* BatteryMonApp.swift */,
 				34701FBD2A358C5400715C81 /* ContentView.swift */,
 				34701FBF2A358C5400715C81 /* Assets.xcassets */,
@@ -279,6 +281,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BatteryMon/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,6 +310,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BatteryMon/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
