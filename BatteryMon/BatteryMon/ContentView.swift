@@ -12,6 +12,15 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            HStack {
+                Spacer()
+                Button(action: quit) {
+                    Label("Quit", systemImage: "xmark.circle.fill")
+                }
+                .foregroundColor(.secondary)
+            }
+            .buttonStyle(.borderless)
+            
             Picker("Interval", selection: $interval) {
                 ForEach(1...100, id: \.self) { i in
                     Text("\(i)%")
@@ -19,6 +28,10 @@ struct ContentView: View {
             }
         }
         .padding()
+    }
+    
+    func quit() {
+        NSApp.terminate(nil)
     }
 }
 
