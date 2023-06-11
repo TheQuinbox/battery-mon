@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("interval") var interval = 10
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Picker("Interval", selection: $interval) {
+                ForEach(1...100, id: \.self) { i in
+                    Text("\(i)%")
+                }
+            }
         }
         .padding()
     }
