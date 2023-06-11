@@ -13,6 +13,8 @@
 		34701FC32A358C5400715C81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34701FC22A358C5400715C81 /* Preview Assets.xcassets */; };
 		349857D32A3595FD0045BCAC /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349857D12A3595FD0045BCAC /* MainViewModel.swift */; };
 		349857D42A3595FD0045BCAC /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349857D22A3595FD0045BCAC /* ConfigManager.swift */; };
+		349857D62A3613CD0045BCAC /* BatteryWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349857D52A3613CD0045BCAC /* BatteryWatcher.swift */; };
+		349857D82A36149D0045BCAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349857D72A36149D0045BCAC /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		34701FC42A358C5400715C81 /* BatteryMon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BatteryMon.entitlements; sourceTree = "<group>"; };
 		349857D12A3595FD0045BCAC /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		349857D22A3595FD0045BCAC /* ConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
+		349857D52A3613CD0045BCAC /* BatteryWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryWatcher.swift; sourceTree = "<group>"; };
+		349857D72A36149D0045BCAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				34002FEF2A358EF000148654 /* Info.plist */,
 				34701FBB2A358C5400715C81 /* BatteryMonApp.swift */,
 				349857D22A3595FD0045BCAC /* ConfigManager.swift */,
+				349857D52A3613CD0045BCAC /* BatteryWatcher.swift */,
+				349857D72A36149D0045BCAC /* AppDelegate.swift */,
 				349857D12A3595FD0045BCAC /* MainViewModel.swift */,
 				34701FBD2A358C5400715C81 /* ContentView.swift */,
 				34701FBF2A358C5400715C81 /* Assets.xcassets */,
@@ -147,6 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				349857D82A36149D0045BCAC /* AppDelegate.swift in Sources */,
+				349857D62A3613CD0045BCAC /* BatteryWatcher.swift in Sources */,
 				34701FBE2A358C5400715C81 /* ContentView.swift in Sources */,
 				34701FBC2A358C5400715C81 /* BatteryMonApp.swift in Sources */,
 				349857D32A3595FD0045BCAC /* MainViewModel.swift in Sources */,

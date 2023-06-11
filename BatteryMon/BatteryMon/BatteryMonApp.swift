@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct BatteryMonApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         MenuBarExtra("Battery Mon") {
             ContentView()
