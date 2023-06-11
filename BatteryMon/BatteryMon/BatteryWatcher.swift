@@ -18,10 +18,10 @@ class BatteryWatcher {
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
             let level = self.getBatteryLevel()
             print("\(level) \(self.lastReported)")
-            if level % self.configManager.interval == 0 && level != self.lastReported {
+            if level % self.configManager.interval == 0 {
                 self.lastReported = level
+                
                 let utterance = AVSpeechUtterance(string: "Battery \(level) percent")
-                utterance.prefersAssistiveTechnologySettings = true
                 self.synth.speak(utterance)
             }
         }
